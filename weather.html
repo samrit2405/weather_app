@@ -9,8 +9,6 @@
 </head>
 <body>
 
-<form action="Users_controller" method="post">
-
   <div class="card">
         <div class="search">
 
@@ -24,7 +22,7 @@
         
         <div class="weather">
        <img src="clear.png" class="weather-icon">
-       <h1 class="temp">40°C</h1>
+       <h1 class="temp">40Â°C</h1>
      <h2 class="city">Greater Noida</h2>
      <div class="details">
      <div class="col">
@@ -44,8 +42,6 @@
         </div>
         </div>
         </div>
-        
-        </form>
  
     <script>
     
@@ -68,7 +64,7 @@
           var data = await response.json();
      
      document.querySelector(".city").innerHTML = data.name;
-     document.querySelector(".temp").innerHTML = Math.round(data.main.temp)  + "°C";
+     document.querySelector(".temp").innerHTML = Math.round(data.main.temp)  + "Â°C";
      document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
      document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
